@@ -1,0 +1,19 @@
+{
+  "tasks_folders": [
+    "/home/google_data/public_data/input_data/task1_v4"
+
+  ],
+  "root_filepath_to_save_experiments": "/home/completed_experiments/PGDL/public_data_experiments/imp",
+  "topo_weight": 0,
+  "epochs": 1200,
+  "classical_loss": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
+  "topological_loss": "partial(topological_redundancy_importance_percentage_sampling, distance_strategy_fn=absolute_correlation.compute_distance_matrix)",
+  "accuracy_model": "lambda name: tf.metrics.SparseCategoricalAccuracy(name=name)",
+  "loss_metric_model_used": "lambda name: tf.keras.metrics.Mean(name=name)",
+  "homology_distance_fn": "absolute_correlation.compute_distance_matrix",
+  "iterations_to_plot": 50,
+  "patience": 20,
+  "batch_size": 256,
+  "iterations_to_compute_topological_loss": 1,
+  "models_to_analyse": [20, 21, 22, 23, 148, 149, 150, 151]
+}

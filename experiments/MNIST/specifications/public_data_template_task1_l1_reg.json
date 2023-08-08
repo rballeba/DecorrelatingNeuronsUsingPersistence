@@ -1,0 +1,16 @@
+{
+  "dataset_folder": "/home/mnist",
+  "root_filepath_to_save_experiments": "/home/completed_experiments/mnist/public_data_experiments/l_one",
+  "topo_weight": 0,
+  "epochs": 1200,
+  "classical_loss": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
+  "topological_loss": "l1_regularisation_term",
+  "accuracy_model": "lambda name: tf.metrics.SparseCategoricalAccuracy(name=name)",
+  "loss_metric_model_used": "lambda name: tf.keras.metrics.Mean(name=name)",
+  "homology_distance_fn": "absolute_correlation.compute_distance_matrix",
+  "iterations_to_plot": 50,
+  "patience": 20,
+  "batch_size": 256,
+  "iterations_to_compute_topological_loss": 1,
+  "models_to_analyse": [2, 3, 6]
+}
